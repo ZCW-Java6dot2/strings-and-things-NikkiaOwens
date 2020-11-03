@@ -14,9 +14,24 @@ public class StringsAndThings {
      *           countYZ("day fez"); // Should return 2
      *           countYZ("day fyyyz"); // Should return 2
      */
-    public Integer countYZ(String input){
-        return null;
+    public Integer countYZ(String input) {
+        int result = 0;
+        String splitUp[] = input.split(" ");
+        for (int i = 0; i < splitUp.length; i++) {
+            if (splitUp[i].endsWith("y") || splitUp[i].endsWith("z")) {
+                result++;
+
+            }
+            //result should be an integer
+
+        }
+        return result;
     }
+
+
+
+
+
 
     /**
      * Given two strings, base and remove, return a version of the base string where all instances of the remove string have
